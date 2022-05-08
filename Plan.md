@@ -10,8 +10,8 @@
 
 2) Перечень используемых инструментов с обоснованием выбора
 - intellij idea community edition;
-- Gradle;
 - java 11 eclipse temurin;
+- Gradle;
 - Git и GitHub;
 - Lombok;
 - Allure;
