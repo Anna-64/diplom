@@ -1,7 +1,8 @@
-version: '3'
+version: '3.7'
 services:
   mysqldb:
     image: mysql:latest
+    container_name: mysql
     ports:
       - '3306:3306'
     volumes:
@@ -13,6 +14,7 @@ services:
       - MYSQL_PASSWORD=pass
   postgresdb:
     image: postgres:latest
+    container_name: postgres
     ports:
       - '5432:5432'
     volumes:
@@ -23,7 +25,10 @@ services:
       - POSTGRES_PASSWORD=pass
 
   nodejs:
+    image: nodejs
+    container_name: nodejs
     build: ./gate-simulator
     ports:
       - "9999:9999"
+
 
