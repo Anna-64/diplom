@@ -24,11 +24,6 @@ services:
       - POSTGRES_USER=app
       - POSTGRES_PASSWORD=pass
 
-  nodejs:
-    image: nodejs
-    container_name: nodejs
-    build: ./gate-simulator
-    ports:
-      - "9999:9999"
+
 
 
